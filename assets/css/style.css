@@ -8,40 +8,73 @@
 body {
     background-color: var(--grey);
     color: var(--black);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header {
     background-color: var(--accent);
     color: var(--grey);
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     align-items: center;
     padding: 30px 30px 20px 30px;
-    margin: -8px -8px 0 -8px;
+    margin: -8px -18px 0 -18px;
 }   
 
 h1 {
     font-size: 40px;
     background-color: var(--purple);
     padding: 30px 30px 30px 40px;
-    margin: -30px -10px 0px -40px;;
+    margin: -10px -10px 0px -40px;;
 }
 
 .nav li {
     font-size: 30px;
     display: inline-flex;
-    justify-content: center;
-    padding-top: 5px;
+    align-items: baseline;
+    margin: 10px;   
 }
 
 header a{
-    color: var(--grey);   
-    margin: 10px;
+    color: var(--grey);
 }
 
-section {
-    
-}   
+.bg {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/grand-canyon.jpg");
+    background-size: cover;
+    background-position: 50% 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main {
+}
+
+.sectionhead{
+    font-size: 30px;
+    text-decoration: underline var(--accent);
+}
+
+#about-me {     
+    padding-top: 10px;
+    display: flex;
+    flex-basis: 100%; 
+}
+
+#about-me div{
+    flex-direction: column;
+}
+
+#my-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 footer {
     color: var(--black);   
@@ -53,9 +86,17 @@ footer a {
     display: inline-block;
 }
 
-@media screen and (max-width: 836px) {
+@media screen and (max-width: 856px) {
     header  {
       flex-direction: column;   
+    }
+  }
+  
+  @media screen and (max-width: 562px) {
+    .nav li  {
+        display: flex;
+        flex-direction: column;   
+        justify-content: center;
     }
   }
   
