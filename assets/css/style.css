@@ -89,18 +89,28 @@ header a{
 
 /* my work formatting */
 #my-work {
+    padding-top: 10px;
     display: flex;
+    flex-basis: 100%; 
     flex-wrap: wrap;
+}
+
+#my-work h2 {
+    display: inline-flex;
+    flex: 1 1;
+    padding-right: 20px;
+}
+
+#my-work {
+    flex:5 1;
+    display: flex;
 }
 
 /* main focus work formatting */
 #Big-Work {
-    
-}
-
-.work{
 
 }
+
 
 footer {
     color: var(--black);   
