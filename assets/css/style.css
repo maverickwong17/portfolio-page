@@ -1,3 +1,4 @@
+/* Color pallete */
 :root {
     --black: #000000;
     --grey:  #d3d3d3;
@@ -5,6 +6,7 @@
     --accent: #5a1177;
 }
 
+/* body background */
 body {
     background-color: var(--grey);
     color: var(--black);
@@ -12,6 +14,7 @@ body {
     padding-right: 10px;
 }
 
+/* header background and formatting */
 header {
     background-color: var(--accent);
     color: var(--grey);
@@ -40,6 +43,7 @@ header a{
     color: var(--grey);
 }
 
+/* spanned image below header */
 .bg {
     height: 200px;
     width: 100%;
@@ -51,15 +55,13 @@ header a{
     margin-right: auto;
 }
 
-
-main {
-}
-
+/* Format each section head */
 .sectionhead{
     font-size: 30px;
-    text-decoration: underline var(--accent);
+    text-decoration: underline var(--purple);
 }
 
+/* about me section formatting */
 #about-me {     
     padding-top: 10px;
     display: flex;
@@ -68,13 +70,37 @@ main {
 
 #about-me div{
     flex-direction: column;
+    margin-left: 10px;
+    background-color: var(--accent);
+    color: var(--grey);
+    padding-left: 20px;
+    flex: 2 2;
 }
 
+#about-me img{
+    object-fit: cover;
+    object-position: 40% 75%;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex: 1 1;
+    padding: 10px;
+}
+
+/* my work formatting */
 #my-work {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* main focus work formatting */
+#Big-Work {
+    
+}
+
+.work{
+
+}
 
 footer {
     color: var(--black);   
