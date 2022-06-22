@@ -120,10 +120,11 @@ header a{
     flex: auto;
 }
 
-#Big-Work .img{
+#Big-Work img{
     height: 500px;
     object-fit: cover;
     display: flex;
+    flex: 1 1 50%;
 }
 
 /* other work formatting */
@@ -155,6 +156,14 @@ figcaption a{
     font-size: 30px;
     background-color: var(--accent);
     padding: 10px;
+}
+
+figcaption,.work>img:hover{
+    filter: saturate(50%);
+}
+
+figcaption{
+    filter: saturate(50%);
 }
 
 /* footer formatting */
