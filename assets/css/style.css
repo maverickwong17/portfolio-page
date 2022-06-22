@@ -117,14 +117,13 @@ header a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 1 100%;
+    flex: auto;
 }
 
 #Big-Work .img{
     height: 500px;
     object-fit: cover;
     display: flex;
-    flex: 1 2 100%;
 }
 
 /* other work formatting */
@@ -132,14 +131,14 @@ header a{
     display: flex;  
     flex-wrap: wrap;
     justify-content: space-evenly;  
-    flex: 1 1 100%;
+    flex: auto;
 }   
 
 #small-work img {
     display: flex;
     height: 200px;
     width: 400px;
-    flex: 0 1 50%;
+    flex: 0 1 100%;
 }
 
 .work img {
