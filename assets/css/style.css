@@ -109,6 +109,7 @@ header a{
     padding-left: 20px;
     margin-left: -33px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* main focus work formatting */
@@ -116,28 +117,45 @@ header a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1 1 100%;
 }
 
 #Big-Work .img{
+    height: 500px;
     object-fit: cover;
-    width: 100%;
-    height: auto;
+    display: flex;
+    flex: 1 2 100%;
 }
 
 /* other work formatting */
 #small-work {
     display: flex;  
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly;  
+    flex: 1 1 100%;
 }   
 
 #small-work img {
+    display: flex;
     height: 200px;
     width: 400px;
+    flex: 0 1 50%;
 }
 
 .work img {
     border: 10px solid var(--purple);
+}
+
+/* Figure caption formatting*/
+figcaption {
+    margin: -60px 0 60px 15px;
+}
+
+figcaption a{
+    color: var(--grey);
+    font-size: 30px;
+    background-color: var(--accent);
+    padding: 10px;
 }
 
 /* footer formatting */
